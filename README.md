@@ -1,12 +1,18 @@
 # Gideons Revision
-Plain HTML/CSS/JS, no build step.
+
+Free A-Level revision website: Religious Studies (AQA), Economics (Pearson Edexcel A), Media Studies (OCR).
+Plain HTML + CSS + JavaScript. No framework, no build step, no dependencies. Progress is saved in the browser (localStorage).
+
+## Structure
+- `index.html`   page shell, links the CSS and JS
+- `css/styles.css`  all styling (layout, colours, dark mode, animations, mobile)
+- `js/app.js`    all data (subjects, topics, summaries, questions, flashcards) and app logic (quizzes, marking, progress, streaks, timer, search, backup)
+- `vercel.json`, `package.json`  deploy/run config
 
 ## Run locally
-`npx serve .`
+Double-click `index.html`, or run `npx serve .` and open the printed address.
 
-## Deploy on Vercel
-1. Put these files in a GitHub repo (or run `npx vercel` in this folder).
-2. Import the repo on vercel.com. Framework: **Other**. Leave build command empty. Output directory: `.`
-
-## Add content
-Edit `SUBJECTS` (topics) and `QUESTIONS` (question bank) at the top of `app.js`.
+## Deploy
+1. Push this folder to a GitHub repo.
+2. vercel.com > Add New > Project > import the repo.
+3. Framework Preset: Other. Build Command: empty. Output Directory: empty (root). Deploy.
