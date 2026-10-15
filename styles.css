@@ -1,0 +1,22 @@
+:root{--bg:#f6f7fb;--card:#fff;--text:#1c2030;--muted:#667;--accent:#4f46e5;--ok:#16a34a;--bad:#dc2626;--line:#e3e6ef}
+[data-theme=dark]{--bg:#0f1220;--card:#181c30;--text:#eef0fa;--muted:#99a;--accent:#818cf8;--line:#2a2f4a}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--text)}
+header{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:space-between;align-items:center;padding:.8rem 1.2rem;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0}
+.logo{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.2rem}
+nav a{margin-left:1rem;color:var(--text);text-decoration:none}nav a:hover{color:var(--accent)}
+main{max-width:860px;margin:0 auto;padding:1.2rem}
+footer{text-align:center;color:var(--muted);padding:2rem;font-size:.85rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.1rem;margin:.8rem 0}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.hero{background:linear-gradient(135deg,var(--accent),#a855f7);color:#fff;border-radius:18px;padding:2rem}
+.hero h1{margin:0 0 .4rem}
+.bar{height:10px;background:var(--line);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ok)}
+button,.btn{background:var(--accent);color:#fff;border:0;border-radius:10px;padding:.6rem 1rem;font:inherit;cursor:pointer;text-decoration:none;display:inline-block}
+button.alt{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+input,select{font:inherit;padding:.5rem;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text)}
+.flash{min-height:140px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:1.2rem;cursor:pointer}
+.opt{display:block;width:100%;text-align:left;margin:.4rem 0;background:var(--card);color:var(--text);border:1px solid var(--line)}
+.opt.ok{border-color:var(--ok);background:rgba(22,163,74,.15)}.opt.bad{border-color:var(--bad);background:rgba(220,38,38,.15)}
+label.t{display:flex;gap:.6rem;align-items:center;padding:.4rem 0;border-bottom:1px solid var(--line)}
+.muted{color:var(--muted)}

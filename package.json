@@ -2,9 +2,6 @@
   "name": "gideons-revision",
   "version": "1.0.0",
   "private": true,
-  "description": "Gideons Revision - A-Level revision website (RS AQA, Economics Edexcel A, Media Studies)",
-  "scripts": {
-    "start": "npx --yes serve .",
-    "dev": "npx --yes serve ."
-  }
+  "description": "A-Level revision website",
+  "scripts": { "start": "npx serve ." }
 }
