@@ -9,4 +9,4 @@ Plain HTML/CSS/JS, no build step.
 2. Import the repo on vercel.com. Framework: **Other**. Leave build command empty. Output directory: `.`
 
 ## Add content
-Edit `SUBJECTS` (topics) and `QUESTIONS` (question bank) at the top of `app.js`.
+Edit `SUBJECTS` (topics) and `QUESTIONS` (question bank) in `js/data.js`.
